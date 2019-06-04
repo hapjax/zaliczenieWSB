@@ -1,0 +1,11 @@
+nav {
+  height: 72px;
+  font-size: 20px;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=header.component.css.map */
