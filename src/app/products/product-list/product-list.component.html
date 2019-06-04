@@ -1,0 +1,15 @@
+<section>
+		<div class="card" *ngFor="let product of products; let i = index" (click)="selectItem(i)">
+			<div class="product-name">{{product.name}}</div>
+      <div class="product-content columns" *ngIf="currentItem === i">
+        <img class="column is-one-third" src="{{product.img}}" alt="Product photo">
+        <div class="product-text column is-two-thirds">
+          <p>{{product.description}}</p>
+          <p>Pricing: ${{product.price}}</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
