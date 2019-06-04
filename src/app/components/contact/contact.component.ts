@@ -25,8 +25,8 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit():void {
-    // this.db.collection('messages').add({ name:this.name, email:this.email, message:this.message});
-    console.log('sent');
+    this.db.collection('messages').add({ name:this.name, email:this.email, message:this.message});
+    // console.log('sent');
     this.formValues.resetForm();
     
   }
